@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asset Tracking</title>
+  <link rel="stylesheet" href="asset.css"/>
+</head>
+<body>
+  <div class="container">
+    <div id="moduleBox" class="box">
+      <h2>assets </h2>
+      <p>Track Assign and It Assets</p>
+    </div>
+    <div id="formContainer" class="form-container hidden">
+      <span id="closeForm" class="close-btn">&times;</span>
+      <h2><strong>Asset Tracking Form</strong></h2>
+      <form id="assetForm">
+        <input type="text" placeholder="Employee ID" required />
+        <input type="text" placeholder="Employee Name" required />
+        <select required>
+          <option value="" disabled selected>Asset Type (e.g., laptop, phone)</option>
+          <option value="laptop">Laptop</option>
+          <option value="phone">Phone</option>
+          <option value="tablet">tablet</option>
+        </select>
+        <input type="text" placeholder="Asset ID / Serial Number" required />
+        <input type="text" placeholder="Issued Date (e.g., July 10, 2025)" required />
+        <input type="text" placeholder="Return Date (if returned)" />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div id="thankYouPopup" class="popup hidden">
+      <p>Thank you for submitting!</p>
+    </div>
+  </div>
+
+  <script src="asset.js"></script>
+</body>
+</html>
